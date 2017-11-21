@@ -1,0 +1,7 @@
+D:\Projekt m318\projekt m318 1\src\SwissTransport\bin\Debug\SwissTransport.dll
+D:\Projekt m318\projekt m318 1\src\SwissTransport\bin\Debug\SwissTransport.pdb
+D:\Projekt m318\projekt m318 1\src\SwissTransport\bin\Debug\Newtonsoft.Json.dll
+D:\Projekt m318\projekt m318 1\src\SwissTransport\bin\Debug\Newtonsoft.Json.xml
+D:\Projekt m318\projekt m318 1\src\SwissTransport\obj\Debug\SwissTransport.csprojResolveAssemblyReference.cache
+D:\Projekt m318\projekt m318 1\src\SwissTransport\obj\Debug\SwissTransport.dll
+D:\Projekt m318\projekt m318 1\src\SwissTransport\obj\Debug\SwissTransport.pdb
