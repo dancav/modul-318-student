@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace SwissTransport
@@ -31,6 +32,11 @@ namespace SwissTransport
 
         [JsonProperty("distance")]
         public double? Distance { get; set; }
+
+        /// <summary>
+        /// Gibt den Namen der Station zurück.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Name;
@@ -42,5 +48,10 @@ namespace SwissTransport
     {
         [JsonProperty("stations")]
         public List<Station> StationList { get; set; }
+
+        public object FirstOrDefault(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

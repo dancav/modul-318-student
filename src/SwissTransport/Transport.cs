@@ -7,6 +7,31 @@ namespace SwissTransport
 {
     public class Transport : ITransport
     {
+
+        /// <summary>
+        /// Orten mit Hilfe von Koordinaten.
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <returns></returns>
+        public Stations getStationWithXY(double x, double y)
+        {
+            var request = CreateWebRequest("http://transport.opendata.ch/v1/locations?x=" + x + "&y=" + y); ;
+            var response = request.GetResponse();
+            var responseStream = response.GetResponseStream();
+
+            if (responseStream != null)
+            {
+                var message = new StreamReader(responseStream).ReadToEnd();
+                var stations = JsonConvert.DeserializeObject<Stations>(message,
+                new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+
+                return stations;
+            }
+
+            return null;
+        }
+
         public Stations GetStations(string query)
         {
             var request = CreateWebRequest("http://transport.opendata.ch/v1/locations?query=" + query);
@@ -42,9 +67,9 @@ namespace SwissTransport
             return null;
         }
 
-        public Connections GetConnections(string fromStation, string toStattion, string date, string time)
+        public Connections GetConnections(string fromStation, string toStattion, string dateTime)
         {
-            var request = CreateWebRequest("http://transport.opendata.ch/v1/connections?from=" + fromStation + "&to=" + toStattion + "&date=" + date+ "&time="+time);
+            var request = CreateWebRequest("http://transport.opendata.ch/v1/connections?from=" + fromStation + "&to=" + toStattion+"&datetime="+dateTime);
             var response = request.GetResponse();
             var responseStream = response.GetResponseStream();
 

@@ -19,6 +19,11 @@ namespace SwissTransport
 
         [JsonProperty("duration")]
         public string Duration { get; set; }
+
+        /// <summary>
+        /// Gibt die Abfahrtsstation zurück.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return From.ToString();
@@ -43,6 +48,11 @@ namespace SwissTransport
         public string Platform { get; set; }
 
         public string RealtimeAvailability { get; set; }
+
+        /// <summary>
+        /// Gibt die Station zurück.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return Station.ToString();
