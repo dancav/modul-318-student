@@ -53,7 +53,7 @@
             // pctLogo
             // 
             this.pctLogo.Image = global::CavicÖV.Properties.Resources.navigation_logo_md_iloveimg_resized;
-            this.pctLogo.Location = new System.Drawing.Point(5, 5);
+            this.pctLogo.Location = new System.Drawing.Point(5, 12);
             this.pctLogo.Name = "pctLogo";
             this.pctLogo.Size = new System.Drawing.Size(156, 150);
             this.pctLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -106,7 +106,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAbfahrtstafel.AutoSize = true;
             this.btnAbfahrtstafel.Enabled = false;
-            this.btnAbfahrtstafel.Location = new System.Drawing.Point(5, 184);
+            this.btnAbfahrtstafel.Location = new System.Drawing.Point(5, 217);
             this.btnAbfahrtstafel.Name = "btnAbfahrtstafel";
             this.btnAbfahrtstafel.Size = new System.Drawing.Size(156, 27);
             this.btnAbfahrtstafel.TabIndex = 5;
@@ -157,7 +157,7 @@
             this.dgvVerbindungen.Name = "dgvVerbindungen";
             this.dgvVerbindungen.ReadOnly = true;
             this.dgvVerbindungen.RowTemplate.Height = 24;
-            this.dgvVerbindungen.Size = new System.Drawing.Size(722, 253);
+            this.dgvVerbindungen.Size = new System.Drawing.Size(729, 253);
             this.dgvVerbindungen.TabIndex = 17;
             this.dgvVerbindungen.TabStop = false;
             // 
@@ -180,7 +180,7 @@
             this.dateTimePickerAll.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.dateTimePickerAll.CustomFormat = "d.MM.yyyy    HH:mm";
             this.dateTimePickerAll.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerAll.Location = new System.Drawing.Point(5, 267);
+            this.dateTimePickerAll.Location = new System.Drawing.Point(788, 74);
             this.dateTimePickerAll.Name = "dateTimePickerAll";
             this.dateTimePickerAll.ShowUpDown = true;
             this.dateTimePickerAll.Size = new System.Drawing.Size(156, 22);
@@ -189,7 +189,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 247);
+            this.label1.Location = new System.Drawing.Point(699, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 17);
             this.label1.TabIndex = 21;

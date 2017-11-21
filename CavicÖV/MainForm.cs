@@ -88,7 +88,7 @@ namespace CavicÖV
 
             List<MeineVerbindungen> meineVerbindungen = new List<MeineVerbindungen>();
 
-
+            /*Von jedem gefundenen Element werden die Daten in mv gespeichert und danach einer List hinzufügt. Die Liste wird danach dem DataGridView übergeben.*/
             foreach (Connection c in strecke.ConnectionList)
             {
                 MeineVerbindungen mv = new MeineVerbindungen(c.Duration, c.From.Departure, c.To.Arrival, c.From.Delay);
