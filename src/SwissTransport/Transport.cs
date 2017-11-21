@@ -95,9 +95,6 @@ namespace SwissTransport
             return request;
         }
 
-        public Connections GetConnections(string fromStation, string toStattion)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }
